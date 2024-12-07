@@ -42,7 +42,7 @@ btn.addEventListener("click",async (evt)=>{
     await fetch(URL).then(response => response.json()).then(result => {
         let exchangerate = result[fromCurr.value.toLowerCase()];
         let rate=exchangerate[toCurr.value.toLowerCase()];
-        mess.innerText=`${amount.value} ${fromCurr.value} = ${rate*amount.value} ${toCurr.value}`
+        mess.innerText=`${amount.value} ${fromCurr.value} = ${parseFloat(rate*amount.value).toFixed(5)} ${toCurr.value}`
     });
 })
 
