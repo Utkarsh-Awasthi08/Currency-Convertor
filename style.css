@@ -29,6 +29,14 @@ form
     margin-top: 3vh;
     align-items: center;
 }
+.swap
+{
+    background-color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
 select
 {
     width: 100%;
